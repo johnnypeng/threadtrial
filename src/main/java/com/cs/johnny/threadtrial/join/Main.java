@@ -31,7 +31,7 @@ public class Main {
 		Thread1 mTh2 = new Thread1("B");
 		mTh1.start();
 		mTh2.start();
-		try {
+		/*try {
 			mTh1.join();
 		} catch (InterruptedException e) {
 			// TODO: handle exception
@@ -43,7 +43,7 @@ public class Main {
 		} catch (InterruptedException e) {
 			// TODO: handle exception
 			e.printStackTrace();
-		}
+		}*/
 		System.out.println(Thread.currentThread().getName() + "主线程运行结束!");
 
 	}

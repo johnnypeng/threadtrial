@@ -42,10 +42,10 @@ public class MyThreadPrinter2 implements Runnable {
 		MyThreadPrinter2 pc = new MyThreadPrinter2("C", b, c);
 
 		new Thread(pa).start();
-		Thread.sleep(100); // 确保按顺序A、B、C执行
+		Thread.sleep(1000); // 确保按顺序A、B、C执行
 		new Thread(pb).start();
-		Thread.sleep(100);
+		Thread.sleep(1000);
 		new Thread(pc).start();
-		Thread.sleep(100);
+		Thread.sleep(1000);
 	}
 }
